@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Phone Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <% @restaurants.each do |restaurant| %>
+        <td><%= restaurant.name %></td>
+        <td><%= restaurant.phone_number %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
